@@ -1,10 +1,10 @@
-package com.company.invoise.invoice;
+package com.mycompany.invoise.customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class InvoiceApplicationTests {
+class CustomerApplicationTests {
 
 	@Test
 	void contextLoads() {
