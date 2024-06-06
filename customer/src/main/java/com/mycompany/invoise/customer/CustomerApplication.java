@@ -1,4 +1,4 @@
-package com.mycompany.invoise;
+package com.mycompany.invoise.customer;
 
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.boot.SpringApplication;
