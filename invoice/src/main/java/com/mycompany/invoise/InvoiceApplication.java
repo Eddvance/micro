@@ -1,4 +1,4 @@
-package com.mycompany.invoise.product;
+package com.mycompany.invoise;
 
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.boot.SpringApplication;
@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 
-@EntityScan("com.mycompany.invoise.")
+@EntityScan("com.mycompany.invoise.core.entity")
 @SpringBootApplication
-public class ProductApplication {
+public class InvoiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductApplication.class, args);
+		SpringApplication.run(InvoiceApplication.class, args);
 	}
 
 	@Bean
@@ -19,4 +19,3 @@ public class ProductApplication {
 		return new Hibernate5Module();
 	}
 }
-////
