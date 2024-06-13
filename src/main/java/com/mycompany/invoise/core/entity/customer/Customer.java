@@ -1,8 +1,8 @@
 package com.mycompany.invoise.core.entity.customer;
 
 
-import javax.persistence.*;
-////
+import jakarta.persistence.*;
+
 @Table(name="CUSTOMER")
 @Entity
 public class Customer {

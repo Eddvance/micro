@@ -1,11 +1,12 @@
 package com.mycompany.invoise.core.entity.customer;
 
-import javax.persistence.*;
-///
+
+import jakarta.persistence.*;
+
 @Table(name="ADDRESS")
 @Entity
 public class Address {
-/////
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
