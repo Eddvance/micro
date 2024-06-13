@@ -1,6 +1,5 @@
 package com.mycompany.invoise.core.entity;
 
-
 import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,3 +55,10 @@ public class Product {
         this.categories.remove(category);
     }
 }
+/*echo "# MicroCoreInvoise" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Eddvance/MicroCoreInvoise.git
+git push -u origin main*/
