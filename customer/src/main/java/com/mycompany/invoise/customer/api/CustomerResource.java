@@ -2,8 +2,8 @@ package com.mycompany.invoise.customer.api;
 
 
 import com.mycompany.invoise.core.entity.customer.Customer;
-import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import com.mycompany.invoise.customer.repository.CustomerRepositoryInterface;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
