@@ -3,6 +3,7 @@ package com.mycompany.invoise.core.entity.product;
 
 import jakarta.persistence.*;
 
+@Table(name="CATEGORY")
 @Entity
 public class Category {
 

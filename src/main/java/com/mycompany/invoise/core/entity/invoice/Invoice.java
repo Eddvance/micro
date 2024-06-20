@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Table(name="INVOICE")
 @Entity
 //@NamedEntityGraph(name="invoice.customer", attributeNodes = @NamedAttributeNode("customer"))
 public class Invoice {
@@ -30,6 +31,7 @@ public class Invoice {
 
     @Transient
     private Customer customer;
+
     @OneToMany(
             fetch = FetchType.LAZY,
             cascade = CascadeType.ALL,
@@ -53,8 +55,7 @@ public class Invoice {
         this.customer = customer;
     }
 
-    public Invoice() {
-    }
+    public Invoice() {}
 
     public String getNumber() {
         return number;

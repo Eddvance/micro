@@ -23,12 +23,6 @@ t
 Dsrc/main/java/com/mycompany/invoise/core/entity/product/Product.java,8/6/86b73007805842bb85b7b4f89ca756be00d9f753
 u
 Esrc/main/java/com/mycompany/invoise/core/entity/product/Category.java,1/6/16bf6a66e950701d411e2bb4009eba1d651f9d08
-s
-Csrc/main/java/com/mycompany/invoise/product/ProductApplication.java,c/9/c96cf2a183b197e224a93b7be8d78caef3fbd328
-u
-Esrc/main/java/com/mycompany/invoise/customer/CustomerApplication.java,3/8/38f02205a0bf4529f0d2094ba170b38cf7bd8dd3
-s
-Csrc/main/java/com/mycompany/invoise/invoice/InvoiceApplication.java,0/6/069a104fff1e7a44583a2f1a2cf6dbecf9582a1d
 w
 G.idea/sonarlint/issuestore/3/6/368d2610d41decb3ea28dbbdf71b92c1a0c84d6d,a/0/a05042a5f4392dbbc5c08ca48f37bfe621c34201
 w
@@ -79,3 +73,9 @@ w
 G.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f
 w
 G.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,a/e/ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1
+s
+Csrc/main/java/com/mycompany/invoise/invoice/InvoiceApplication.java,0/6/069a104fff1e7a44583a2f1a2cf6dbecf9582a1d
+s
+Csrc/main/java/com/mycompany/invoise/product/ProductApplication.java,c/9/c96cf2a183b197e224a93b7be8d78caef3fbd328
+u
+Esrc/main/java/com/mycompany/invoise/customer/CustomerApplication.java,3/8/38f02205a0bf4529f0d2094ba170b38cf7bd8dd3

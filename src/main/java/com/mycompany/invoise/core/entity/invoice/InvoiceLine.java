@@ -4,6 +4,7 @@ package com.mycompany.invoise.core.entity.invoice;
 import com.mycompany.invoise.core.entity.product.Product;
 import jakarta.persistence.*;
 
+@Table(name="INVOICE_LINE")
 @Entity
 public class InvoiceLine {
 
