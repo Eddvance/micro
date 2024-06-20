@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@NamedEntityGraph(name="invoice.customer", attributeNodes = @NamedAttributeNode("customer"))
+//@NamedEntityGraph(name="invoice.customer", attributeNodes = @NamedAttributeNode("customer"))
 public class Invoice {
 
     @Id
@@ -17,11 +17,18 @@ public class Invoice {
     private String number;
     @Column(length = 13)
     private String orderNumber;
-    @ManyToOne(fetch = FetchType.LAZY)
-    // il y a de bonnes raisons pour ne pas reproduire ci dessous entre 2 aggreagats
-    //@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.PERSIST)
-    //@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    @JoinColumn(name = "ID_CUSTOMER", nullable = false)
+
+    private Long idCustomer;
+
+    public Long getIdCustomer() {
+        return idCustomer;
+    }
+
+    public void setIdCustomer(Long idCustomer) {
+        this.idCustomer = idCustomer;
+    }
+
+    @Transient
     private Customer customer;
     @OneToMany(
             fetch = FetchType.LAZY,
