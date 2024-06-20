@@ -1,6 +1,7 @@
-package com.mycompany.invoise.core.entity;
+package com.mycompany.invoise.core.entity.invoice;
 
 
+import com.mycompany.invoise.core.entity.product.Product;
 import jakarta.persistence.*;
 
 @Entity
