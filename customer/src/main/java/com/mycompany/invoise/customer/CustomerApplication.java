@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @EntityScan("com.mycompany.invoise.core.entity.customer")
 @SpringBootApplication
@@ -20,4 +21,7 @@ public class CustomerApplication {
 		module.disable(Hibernate5Module.Feature.USE_TRANSIENT_ANNOTATION);
 		return module;
 	}
+
+	@Bean
+	public RestTemplate getRestTemplate(){return new RestTemplate();}
 }

@@ -40,7 +40,7 @@ fetch('invoice')
     });
 
 function showDetail(invoiceNumber){
-    fetch(invoiceNumber)
+    fetch("invoice")
         .then(res => res.json())
         .then(res => {
             var invoiceDetailNode = document.getElementById('invoice-detail');

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
-@RequestMapping("invoice")
+@RequestMapping("customer")
 public class CustomerResource {
 
     public CustomerRepositoryInterface getCustomerRepository() {
@@ -27,7 +27,7 @@ public class CustomerResource {
 
     @GetMapping("{id}")
     public Customer get(@PathVariable("id") Long id) {
-        System.out.println("La méthode displayInvoice get Invoice a été invoquée");
+        System.out.println("La méthode displayInvoice get Invoice a été invoquée"+id);
         return customerRepository.findById(id).orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 

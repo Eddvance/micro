@@ -3,55 +3,56 @@ package com.mycompany.invoise.invoice.api;
 
 import com.mycompany.invoise.core.entity.customer.Customer;
 import com.mycompany.invoise.core.entity.invoice.Invoice;
-
-
+import com.mycompany.invoise.invoice.service.InvoiceServiceInterface;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("invoice")
 public class InvoiceResource {
-/*
+
     private final InvoiceServiceInterface invoiceService;
+    private final RestTemplate restTemplate;
 
-    public InvoiceResource(InvoiceServiceInterface invoiceService) {
+    public InvoiceResource(InvoiceServiceInterface invoiceService, RestTemplate restTemplate) {
         this.invoiceService = invoiceService;
+        this.restTemplate = restTemplate;
     }
 
-    public InvoiceServiceInterface getInvoiceService() {
-        return invoiceService;
-    }
-
-    @PostMapping
+   /* @PostMapping
     public Invoice create(@RequestBody Invoice invoice) {
         return invoiceService.createInvoice(invoice);
     }
 */
     @GetMapping
     public Iterable<Invoice> list() {
-        System.out.println("La méthode display Home iterable list a été invoquée");
-        //return invoiceService.getInvoiceList();
-        List<Invoice> invoices = new ArrayList<>();
-        Customer customer=new Customer("Lambda");
-        Invoice invoice=new Invoice("NUM_001","001",customer);
-        invoices.add(invoice);
+        System.out.println("La méthode iterable list on display Home a été invoquée");
+        Iterable<Invoice> invoices = invoiceService.getInvoiceList();
+        invoices.forEach(invoice -> {
+                invoice.setCustomer(restTemplate.getForObject("http://localhost:8022/customer/"+invoice.getIdCustomer(),
+                        Customer.class));
+    });
         return invoices;
+}
 
-    }
-/*
     @GetMapping("{id}")
     public Invoice get(@PathVariable("id") String number) {
         System.out.println("La méthode displayInvoice get Invoice a été invoquée");
-        return invoiceService.getInvoiceByNumber(number);
+        Invoice invoice =invoiceService.getInvoiceByNumber(number);
+        invoice.setCustomer(restTemplate.getForObject("http://localhost:8088/customer/"+invoice.getIdCustomer(),
+                Customer.class));
+    return invoice;
     }
-
-    /*@GetMapping("create-form")
+/*
+    @GetMapping("create-form")
     public String displayInvoiceCreateForm(@ModelAttribute InvoiceForm invoice) {
         //vous pourriez même supprimer l'annotation @ModelAttribute si vous ne comptez
         //pas donner un identifiant personnalisé au backing bean
         return "invoice-create-form";
     }*/
+
+
+    public RestTemplate getRestTemplate() {return restTemplate;}
+    public InvoiceServiceInterface getInvoiceService() {return invoiceService;}
+
 }
