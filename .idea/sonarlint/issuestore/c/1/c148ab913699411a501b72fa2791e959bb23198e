@@ -1,9 +1,9 @@
 
-‰
-java:S2259/"FA "NullPointerException" could be thrown; "customer" is nullable here.(Œó¨¼8„«°Ùƒ2J$9827bb3b-b6ce-4be3-a3fc-60898bfe8be9
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(÷¶ïíýÿÿÿÿ8«°Ùƒ2J$1fe620db-429d-4e6d-9fce-dba4dcb94931
-r	java:S106"+Replace this use of System.out by a logger.(ÆÆÄáùÿÿÿÿ8«°Ùƒ2J$ba5b6d42-b52f-4362-931f-b0f42ff0cecc
-o
-java:S1602 ",Remove useless curly braces around statement(»í¼ä8«°Ùƒ2J$300a3772-b49a-4976-9242-dd602a1031b2
-m	java:S106)"+Replace this use of System.out by a logger.(Ûƒ°µ8“«°Ùƒ2J$6817b418-e1fd-42a6-9ebc-c72a22c924b9
-ƒ	java:S1255"<This block of commented-out lines of code should be removed.(æÒšßýÿÿÿÿ8”«°Ùƒ2J$698c036f-fccf-4432-8d06-02a2cc07495d
+\
+java:S2259/"FA "NullPointerException" could be thrown; "customer" is nullable here.(Œó¨¼
+V	java:S125"<This block of commented-out lines of code should be removed.(÷¶ïíýÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÆÆÄáùÿÿÿÿ
+B
+java:S1602 ",Remove useless curly braces around statement(»í¼ä
+@	java:S106)"+Replace this use of System.out by a logger.(Ûƒ°µ
+V	java:S1255"<This block of commented-out lines of code should be removed.(æÒšßýÿÿÿÿ
