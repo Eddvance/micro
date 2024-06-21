@@ -29,7 +29,7 @@ public class InvoiceResource {
         System.out.println("La méthode iterable list on display Home a été invoquée");
         Iterable<Invoice> invoices = invoiceService.getInvoiceList();
         invoices.forEach(invoice -> {
-                invoice.setCustomer(restTemplate.getForObject("http://localhost:8022/customer/"+invoice.getIdCustomer(),
+                invoice.setCustomer(restTemplate.getForObject("http://localhost:8088/customer/"+invoice.getIdCustomer(),
                         Customer.class));
     });
         return invoices;

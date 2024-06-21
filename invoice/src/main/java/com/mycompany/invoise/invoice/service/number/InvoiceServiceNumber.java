@@ -4,6 +4,7 @@ import com.mycompany.invoise.core.entity.invoice.Invoice;
 
 import com.mycompany.invoise.invoice.repository.InvoiceRepositoryInterface;
 import com.mycompany.invoise.invoice.service.InvoiceServiceInterface;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +15,7 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     //private final CustomerRepositoryInterface customerRepository;
     private final InvoiceRepositoryInterface invoiceRepository;
 
-    public InvoiceServiceNumber(/*CustomerRepositoryInterface customerRepository, */InvoiceRepositoryInterface invoiceRepository) {
+    public InvoiceServiceNumber(/*CustomerRepositoryInterface customerRepository, */@Qualifier("invoiceRepositoryInterface") InvoiceRepositoryInterface invoiceRepository) {
         //this.customerRepository = customerRepository;
         this.invoiceRepository = invoiceRepository;
     }
