@@ -60,6 +60,11 @@ function showDetail(invoiceNumber){
             text = document.createTextNode(`Order number: ${res.orderNumber}`);
             p.appendChild(text);
             invoiceDetailNode.appendChild(p);
+
+            p = document.createElement("p");
+            text = document.createTextNode(`Customer country: ${res.customer.address.country}`);
+            p.appendChild(text);
+            invoiceDetailNode.appendChild(p);
             console.log(res);
             console.log(res.description);
         });
