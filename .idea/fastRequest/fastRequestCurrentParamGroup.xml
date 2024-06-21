@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentParamGroup">
+    <option name="className" value="com.mycompany.invoise.invoice.controller.InvoiceControllerWeb" />
+    <option name="filePath" value="" />
+    <option name="method" value="displayHome" />
+    <option name="module" value="invoice" />
+    <option name="originUrl" value="/home" />
+    <option name="requestParamMap">
+      <map>
+        <entry key="model">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="responseParamMap">
+      <map>
+        <entry key="return">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="returnDocument" value="&quot;No comment,Type =String&quot;" />
+    <option name="url" value="/home" />
+  </component>
+</project>
