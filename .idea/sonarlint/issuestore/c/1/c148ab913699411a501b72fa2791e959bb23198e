@@ -1,7 +1,9 @@
 
-|	java:S125"<This block of commented-out lines of code should be removed.(÷¶ïíıÿÿÿÿJ$1109a429-1588-436c-ba78-d5b22c816f72
-k	java:S106"+Replace this use of System.out by a logger.(ÆÆÄáùÿÿÿÿJ$7141fd58-d899-4afe-8efa-2d0ff17258f7
-h
-java:S1602",Remove useless curly braces around statement(»í¼äJ$684e2b14-6070-4f45-8e65-7f8620603040
-f	java:S106("+Replace this use of System.out by a logger.(Ûƒ°µJ$6a28aa3d-6035-4b3f-aea0-320a0d351ca1
-|	java:S1250"<This block of commented-out lines of code should be removed.(æÒšßıÿÿÿÿJ$422a4a62-0f2c-4d63-af83-394b6cd9f03d
+‰
+java:S2259/"FA "NullPointerException" could be thrown; "customer" is nullable here.(Œó¨¼8„«°Ùƒ2J$9827bb3b-b6ce-4be3-a3fc-60898bfe8be9
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(÷¶ïíıÿÿÿÿ8«°Ùƒ2J$1fe620db-429d-4e6d-9fce-dba4dcb94931
+r	java:S106"+Replace this use of System.out by a logger.(ÆÆÄáùÿÿÿÿ8«°Ùƒ2J$ba5b6d42-b52f-4362-931f-b0f42ff0cecc
+o
+java:S1602 ",Remove useless curly braces around statement(»í¼ä8«°Ùƒ2J$300a3772-b49a-4976-9242-dd602a1031b2
+m	java:S106)"+Replace this use of System.out by a logger.(Ûƒ°µ8“«°Ùƒ2J$6817b418-e1fd-42a6-9ebc-c72a22c924b9
+ƒ	java:S1255"<This block of commented-out lines of code should be removed.(æÒšßıÿÿÿÿ8”«°Ùƒ2J$698c036f-fccf-4432-8d06-02a2cc07495d

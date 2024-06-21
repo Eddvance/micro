@@ -323,3 +323,11 @@ G.idea/sonarlint/issuestore/0/2/02bb682b0495d607ff396f9d5005f3c4402c7643,6/b/6b
 Q.idea/sonarlint/securityhotspotstore/a/7/a7b38f7a825999e4df212966669d340e5499f503,c/1/c134e31e6447a62264fac5d7f3657b03202e19bf
 w
 G.idea/sonarlint/issuestore/0/5/0541c7d4595892bfc3dd966f1e725ce82f52e44a,b/8/b88cfbcae5774a11403f7165a17986d852641239
+v
+Fsrc/main/java/com/mycompany/invoise/customer/api/CustomerResource.java,a/c/ac5aa459624e057fc8fc1a0345e7bd5c1d2a93dd
+t
+Dsrc/main/java/com/mycompany/invoise/customer/api/AdressResource.java,b/4/b440be281434320d79daa40f1be2e3bf3f42ba2e
+ˆ
+Xsrc/main/java/com/mycompany/invoise/customer/repository/CustomerRepositoryInterface.java,4/b/4b8e02e9f0ea55f193fae3452994bb137470e799
+†
+Vsrc/main/java/com/mycompany/invoise/customer/repository/AdressRepositoryInterface.java,1/6/1693d7cc45f2eca45df376b2751e3c637810af57
