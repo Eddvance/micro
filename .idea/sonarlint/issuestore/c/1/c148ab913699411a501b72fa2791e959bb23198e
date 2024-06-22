@@ -1,9 +1,0 @@
-
-\
-java:S2259/"FA "NullPointerException" could be thrown; "customer" is nullable here.(Œó¨¼
-V	java:S125"<This block of commented-out lines of code should be removed.(÷¶ïíýÿÿÿÿ
-E	java:S106"+Replace this use of System.out by a logger.(ÆÆÄáùÿÿÿÿ
-B
-java:S1602 ",Remove useless curly braces around statement(»í¼ä
-@	java:S106)"+Replace this use of System.out by a logger.(Ûƒ°µ
-V	java:S1255"<This block of commented-out lines of code should be removed.(æÒšßýÿÿÿÿ
