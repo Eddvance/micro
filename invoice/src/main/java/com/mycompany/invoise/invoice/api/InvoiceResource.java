@@ -30,7 +30,7 @@ public class InvoiceResource {
         System.out.println("La méthode iterable list on display Home a été invoquée");
         Iterable<Invoice> invoices = invoiceService.getInvoiceList();
         invoices.forEach(invoice -> {
-                invoice.setCustomer(restTemplate.getForObject("http://localhost:8088/customer/"+invoice.getIdCustomer(),
+                invoice.setCustomer(restTemplate.getForObject("http://customer-service/customer"+invoice.getIdCustomer(),
                         Customer.class));
     });
         return invoices;
@@ -40,9 +40,9 @@ public class InvoiceResource {
     public Invoice get(@PathVariable("id") String number) {
         System.out.println("La méthode displayInvoice get Invoice a été invoquée");
         Invoice invoice =invoiceService.getInvoiceByNumber(number);
-        final Customer customer =restTemplate.getForObject("http://localhost:8088/customer/"+invoice.getIdCustomer(),
+        final Customer customer =restTemplate.getForObject("http://customer-service/customer"+invoice.getIdCustomer(),
                 Customer.class);
-        final Address adress=restTemplate.getForObject("http://localhost:8088/address/"+invoice.getIdCustomer(),
+        final Address adress=restTemplate.getForObject("http://customer-service/customer"+invoice.getIdCustomer(),
                 Address.class);
     customer.setAddress(adress);
     invoice.setCustomer(customer);
