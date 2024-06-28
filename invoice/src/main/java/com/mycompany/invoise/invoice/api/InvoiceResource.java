@@ -58,8 +58,6 @@ public class InvoiceResource {
         return "invoice-create-form";
     }*/
 
-
     public RestTemplate getRestTemplate() {return restTemplate;}
     public InvoiceServiceInterface getInvoiceService() {return invoiceService;}
-
 }
