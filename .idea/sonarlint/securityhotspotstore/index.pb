@@ -508,4 +508,14 @@ Q.idea/sonarlint/securityhotspotstore/4/6/46f3c36bd5c550e3d99e5ab1ad97cce7fd89f1
 Å
 Q.idea/sonarlint/securityhotspotstore/4/6/46b1e47422dc9bb27d66232520441f7cb61c8c1d,4/a/4ac3aad60f9e1c3bf1fd79aabe004d7004597766
 t
+Dsrc/main/java/com/mycompany/invoise/customer/api/AdressResource.java,b/4/b440be281434320d79daa40f1be2e3bf3f42ba2e
+u
+Esrc/main/java/com/mycompany/invoise/customer/CustomerApplication.java,3/8/38f02205a0bf4529f0d2094ba170b38cf7bd8dd3
+t
 Dsrc/main/java/com/mycompany/invoise/invoice/api/InvoiceResource.java,c/1/c148ab913699411a501b72fa2791e959bb23198e
+s
+Csrc/main/java/com/mycompany/invoise/invoice/InvoiceApplication.java,0/6/069a104fff1e7a44583a2f1a2cf6dbecf9582a1d
+Ü
+Vsrc/main/java/com/mycompany/invoise/service_discovery/ServiceDiscoveryApplication.java,b/1/b1e427c99f3151efb8d5d56b2d37155f1eec5a8f
+s
+Csrc/main/java/com/mycompany/invoise/product/ProductApplication.java,c/9/c96cf2a183b197e224a93b7be8d78caef3fbd328
